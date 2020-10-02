@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent</title>
+    <link rel="icon" href="/assets/images/icon.ico" type="image/icon type">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="name">
+            <span></span>
+            <div class="cursor"></div>
+        </div>
+        <div class="description">
+            <p>
+                I'm a student of Bina Nusantara University, majoring in Software Engineering - Computer Science.
+                <br>
+                I'm currently working at Software Laboratory Center as Teaching Assistant.
+            </p>
+
+        </div>
+        <div class="profile"></div>
+
+        <div class="social">
+            <div class="social-button" onclick="openLink(`https://github.com/vincentzhangz/`)">
+                <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+            </div>
+            <div class="social-button" onclick="openLink(`https://www.linkedin.com/in/vincentzhangz`)">
+                <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+            </div>
+            <div class="social-button" onclick="openLink(`mailto:vincentzhangz@outlook.com`)">
+                <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />
+            </div>
+            <div class="social-button" onclick="openLink(`https://www.facebook.com/vincentzhangzz/`)">
+                <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />
+            </div>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <div class="container background">
+        <div>
+            <h1>My Skills</h1>
+        </div>
+        <div class="pill-container">
+            <div class="pill">Android</div>
+            <div class="pill">Angular</div>
+            <div class="pill">C</div>
+            <div class="pill">C#</div>
+            <div class="pill">C++</div>
+            <div class="pill">CSS3</div>
+            <div class="pill">Dart</div>
+            <div class="pill">Firebase</div>
+            <div class="pill">Flutter</div>
+            <div class="pill">Go</div>
+            <div class="pill">GraphQL</div>
+            <div class="pill">HTML5</div>
+            <div class="pill">Java</div>
+            <div class="pill">Javascript</div>
+            <div class="pill">Kotlin</div>
+            <div class="pill">Laravel</div>
+            <div class="pill">MongoDB</div>
+            <div class="pill">MySQL</div>
+            <div class="pill">PHP</div>
+            <div class="pill">PostgreSQL</div>
+            <div class="pill">Python</div>
+            <div class="pill">SASS</div>
+            <div class="pill">Swift</div>
+            <div class="pill">Typescript</div>
+        </div>
+    </div>
+    <hr style="width: 97%;">
+    <footer class="footer-area">
+        <div class="container">
+            <div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2020
+                        <a href="#" class="link"><span>Vincent</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
+    <script src="//daybrush.com/scenejs-effects/release/latest/dist/effects.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script>
+        new Scene({
+            ".name span": Scene.typing({
+                text: `Hi I'm Vincent`,
+                duration: 1,
+                delay: 0.1,
+            }),
+            ".cursor": {
+                0: { opacity: 0 },
+                0.5: { opacity: 0 },
+                "0.5>": { opacity: 1 },
+                1: { opacity: 1 },
+                options: {
+                    iterationCount: 8,
+                }
+            },
+        }, {
+            iterationCount: "infinite",
+            direction: "alternate",
+            selector: true,
+        }).play();
+
+    </script>
+</body>
+
+</html>
